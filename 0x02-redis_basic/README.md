@@ -6,11 +6,13 @@ https://intranet.alxswe.com/rltoken/7SluvFvgckwVgsvrfOf1CQ
 https://intranet.alxswe.com/rltoken/hJVo3XwMMFFoApyX8zPXvA
 
 Install Redis on Ubuntu 18.04
-$ sudo apt-get -y install redis-server
-$ pip3 install redis
-$ sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
+1. $ sudo apt-get -y install redis-server
+2. $ pip3 install redis
+3.?$ sed -i "s/bind .*/bind 127.0.0.1/g" /etc/redis/redis.conf
+
 Use Redis in a container
-Redis server is stopped by default - when you are starting a container, you should start it with: service redis-server start
+Redis server is stopped by default - when you are starting a container, you should start it with:
+service redis-server start
 
 Tasks
 0. Writing strings to Redis
